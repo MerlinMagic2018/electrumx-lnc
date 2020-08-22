@@ -2617,7 +2617,7 @@ class MyriadcoinTestnet(Myriadcoin):
     GENESIS_HASH = ('0000017ce2a79c8bddafbbe47c004aa9'
                     '2b20678c354b34085f62b762084b9788')
 
-lass LNC(Coin):
+class LNC(Coin):
     NAME = "LightningCash"
     SHORTNAME = "LNC"
     NET = "mainnet"
