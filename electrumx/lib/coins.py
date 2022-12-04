@@ -2635,3 +2635,22 @@ class LNC(Coin):
     RPC_PORT = 9110
     REORG_LIMIT = 5000
     PEERS = []
+
+class TRI(Coin):
+    NAME = "Triangles"
+    SHORTNAME = "TRI"
+    NET = "mainnet"
+    XPUB_VERBYTES = bytes.fromhex("0488b21e")
+    XPRV_VERBYTES = bytes.fromhex("0488ade4")
+    P2PKH_VERBYTE = bytes.fromhex("1c")
+    P2SH_VERBYTES = [bytes.fromhex("05")]
+    WIF_BYTE = bytes.fromhex("b0")
+    GENESIS_HASH = ('7e7a6e4dd5fe895106fca912dfbacaea'
+                    'f2a89e76c6a588df8ff96e0e18b96021')
+    DESERIALIZER = lib_tx.DeserializerSegWit
+    TX_COUNT = 1
+    TX_COUNT_HEIGHT = 1
+    TX_PER_BLOCK = 1
+    RPC_PORT = 19111
+    REORG_LIMIT = 5000
+    PEERS = []
