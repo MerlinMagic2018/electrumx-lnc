@@ -2673,3 +2673,22 @@ class LNCR(Coin):
     RPC_PORT = 9112
     REORG_LIMIT = 5000
     PEERS = []
+
+class FRC(Coin):
+    NAME = "FairCoin"
+    SHORTNAME = "FRC"
+    NET = "mainnet"
+    XPUB_VERBYTES = bytes.fromhex("0488b21e")
+    XPRV_VERBYTES = bytes.fromhex("0488ade4")
+    P2PKH_VERBYTE = bytes.fromhex("24")
+    P2SH_VERBYTES = [bytes.fromhex("3F")]
+    WIF_BYTE = bytes.fromhex("80")
+    GENESIS_HASH = ('e828fe1dda55000fb73d9f55eb3b6d00'
+                    '14e910dbf466b14ad0eb93239a1cd8f0')
+    DESERIALIZER = lib_tx.DeserializerSegWit
+    TX_COUNT = 1
+    TX_COUNT_HEIGHT = 1
+    TX_PER_BLOCK = 1
+    RPC_PORT = 9875
+    REORG_LIMIT = 5000
+    PEERS = []
