@@ -2692,3 +2692,22 @@ class FRC(Coin):
     RPC_PORT = 9875
     REORG_LIMIT = 5000
     PEERS = []
+
+class NYC(Coin):
+    NAME = "NewYorkCoin"
+    SHORTNAME = "NYC"
+    NET = "mainnet"
+    XPUB_VERBYTES = bytes.fromhex("0488b21e")
+    XPRV_VERBYTES = bytes.fromhex("0488ad98")
+    P2PKH_VERBYTE = bytes.fromhex("3C")
+    P2SH_VERBYTES = [bytes.fromhex("16")]
+    WIF_BYTE = bytes.fromhex("BC")
+    GENESIS_HASH = ('5597f25c062a3038c7fd815fe46c67de'
+                    'dfcb3c839fbc8e01ed4044540d08fe48')
+    DESERIALIZER = lib_tx.DeserializerSegWit
+    TX_COUNT = 1
+    TX_COUNT_HEIGHT = 1
+    TX_PER_BLOCK = 1
+    RPC_PORT = 22255
+    REORG_LIMIT = 5000
+    PEERS = []
