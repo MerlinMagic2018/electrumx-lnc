@@ -2708,6 +2708,6 @@ class NYC(Coin):
     TX_COUNT = 1
     TX_COUNT_HEIGHT = 1
     TX_PER_BLOCK = 1
-    RPC_PORT = 22255
+    RPC_PORT = 22555
     REORG_LIMIT = 5000
     PEERS = []
