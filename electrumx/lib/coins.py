@@ -2655,22 +2655,22 @@ class TRI(Coin):
     REORG_LIMIT = 5000
     PEERS = []
 
-class LNCR(Coin):
-    NAME = "LightningCash-Reborn"
-    SHORTNAME = "LNCR"
+class UNTT(Coin):
+    NAME = "Unitatem"
+    SHORTNAME = "UNTT"
     NET = "mainnet"
     XPUB_VERBYTES = bytes.fromhex("0488b21e")
     XPRV_VERBYTES = bytes.fromhex("0488ade4")
-    P2PKH_VERBYTE = bytes.fromhex("1c")
+    P2PKH_VERBYTE = bytes.fromhex("44")
     P2SH_VERBYTES = [bytes.fromhex("05")]
     WIF_BYTE = bytes.fromhex("b0")
-    GENESIS_HASH = ('35f373b6fed4342ef20327917f756dc5'
-                    'fe76b4f2c111ac0a1c52ba408764709b')
+    GENESIS_HASH = ('df31eb0fc87db6ca0db74a3e3fd68298'
+                    '4cc36ced4d7b60c4544d0d223c19fd56')
     DESERIALIZER = lib_tx.DeserializerSegWit
     TX_COUNT = 1
     TX_COUNT_HEIGHT = 1
     TX_PER_BLOCK = 1
-    RPC_PORT = 9112
+    RPC_PORT = 9176
     REORG_LIMIT = 5000
     PEERS = []
 
